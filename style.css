@@ -19,6 +19,18 @@
     transition: 0.4s;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 10%;
+    margin-bottom: 2%;
+}
+
+header img {
+    height: 4.3vh;
+    width: 4.3vh;
+}
+
 button {
     border: solid #FB8F1D 1px;
     background-color: #FB8F1D;
@@ -32,86 +44,74 @@ button:hover {
     color: #FB8F1D;
 }
 
+.header__functional {
+    width: 100%;
+    padding-right: 5%;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.header__functional nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 3%;
+}
+
+.header__functional a {
+    font-size: 1.9vh;
+    font-family: 'Inter';
+    color: #B8BECD;
+    text-decoration: none;
+}
+
+.header__functional a:hover {
+    color: #202336;
+    cursor: pointer;
+}
+
+.header__functional button {
+    width: 8.25vw;
+    height: 4.4vh;
+}
+
+.header__functional button:last-child {
+    margin-left: 1.5%;
+}
+
+h1 {
+    font-size: 6.4vh;
+    line-height: 8vh;
+}
+
 h1, h2 {
     font-family: 'Playfair Display';
     font-weight: 700;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    height: 4.3vh;
-    margin-bottom: 8vh;
-    padding-right: 5.3vh;
-}
-
-header > img {
-    height: 4.4vh;
-    width: 4.4vh;
-}
-
-header > nav {
-    display: flex;
-    width: 52wv;
-    align-items: center;
-}
-
-footer {
-    background-color: #F8F8F8;
-    height: 19vh;
-}
-
-.top {
-    padding: 5.3vh 6.5vw 17.5vh 11.9vw;
-}
-
-.ceiling__pages {
-    width: 25vw;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.9vh;
-    font-family: 'Inter';
-    color: #B8BECD;
-}
-
-.ceiling__pages > p:hover {
-    color: #202336;
-    cursor: pointer;
-}
-
-.ceiling__authentication {
-    margin-left: 0.8vw;
-    display: inline;
-}
-
-.ceiling__authentication > button {
-    width: 8.25vw;
-    height: 4.4vh;
-    margin: 0 1.1vw 0 0;
-}
-
-.topBody {
-    margin-top: 3.2vh;
+.topPage {
+    padding: 0 10%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-.topBody > img {
-    height: 65vh;
+.topPage img {
+    height: 60vh;
 }
 
 .holidayFinder {
-    margin-top: 4.5vh;
-    width: 30vw;
+    width: 30%;
 }
 
-.holidayFinder > p {
-    margin: 7.5vh 0;
+.holidayFinder p {
+    margin: 15% 0;
     font-family: 'Inter';
     font-weight: 900;
 }
 
-.holidayFinder > p::after {
+.holidayFinder p::after {
     content: "";
     display: block;
     margin-top: 2vh;
@@ -121,12 +121,7 @@ footer {
     height: 0.2vh;
 }
 
-.holidayFinder > h1 {
-    font-size: 6.4vh;
-    line-height: 8vh;
-}
-
-.holidayFinder__selectors {
+.holidayFinder__selects {
     width: 29vw;
     height: 17vh;
     display: flex;
@@ -134,7 +129,7 @@ footer {
     justify-content: space-between;
 }
 
-.holidayFinder__selectors > select { 
+.holidayFinder__selects select { 
     width: 13.75vw;
     height: 5.2vh;
     border: solid #AFB0B9 0.8px;
@@ -145,15 +140,15 @@ footer {
     appearance: none;
 }
 
-.holidayFinder__selectors > select:hover {
+.holidayFinder__selects select:hover {
     cursor: pointer;
 }
 
-.holidayFinder__selectors > select:focus {
+.holidayFinder__selects select:focus {
     border-color: blue;
 }
 
-.holidayFinder > nav > button {
+.holidayFinder button {
     width: 11.25vw;
     height: 5.2vh;
     margin-top: 2vh;
@@ -161,21 +156,20 @@ footer {
 
 .infoPage {
     background-color: #F8F8F8;
-    padding: 11.1vh 15.5vw 12.9vh 8.8vw;
+    padding: 5% 0 5% 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.infoPage > img {
+.infoPage img {
     height: 53.4vh;
 }
 
 .infoPage__main {
-    padding: 0 6.3vw;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    margin-left: 5%;
 }
 
 .infoPage__main > h2 {
@@ -191,17 +185,16 @@ footer {
     color: #7D7987;
 }
 
-.infoPage__main > nav > button {
+.infoPage__main button {
     width: 10.25vw;
     height: 4.8vh;
 }
 
 .lowerPage {
-    padding: 16.3vh 15vw 14vh 15vw;
+    padding: 8% 14%;
 }
 
 .featuredDestinations {
-    height: 46.5vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -211,13 +204,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 6%;
 }
 
-.featuredDestinations__text > h2 {
+.featuredDestinations__text h2 {
     font-size: 3.6vh
 }
 
-.featuredDestinations__text > nav > a {
+.featuredDestinations__text a {
     font-size: 1.7vh;
     color: #FB8F1D;
     font-family: 'Inter';
@@ -226,8 +220,8 @@ footer {
     text-decoration: none;
 }
 
-.featuredDestinations__text > nav > a > span:hover {
-    text-decoration: undtop;
+.featuredDestinations__text span:hover {
+    text-decoration: underline;
 }
 
 .featuredDestinations__images {
@@ -235,7 +229,7 @@ footer {
     justify-content: space-between;
 }
 
-.featuredDestinations__images > div {
+.featuredDestinations__images div {
     height: 35vh;
     width: 16.3vw;
     background-size: 16.3vw 35vh;
@@ -244,22 +238,23 @@ footer {
     align-items: flex-end;
 }
 
-.featuredDestinations__images > div > span {
+.featuredDestinations__images span {
     display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: white;
     border-radius: 0 6px 0 0;
-    height: 5.6vh;
-    width: 7.5vw;
+    height: 17%;
+    width: 50%;
     font-family: 'Inter';
 }
 
-.featuredDestinations__images > div > span > h3 {
+.featuredDestinations__images h3 {
     font-size: 1.8vh;
+    line-height: 200%;
 }
 
-.featuredDestinations__images > div > span > p {
+.featuredDestinations__images p {
     font-size: 1.5vh;
     color: #80918E;
 }
@@ -280,8 +275,13 @@ footer {
     background-image: url(assets/images/Skadar.png);
 }
 
+footer {
+    background-color: #F8F8F8;
+    height: 19vh;
+}
+
 .footerContent {
-    padding: 0 11.9vw;
+    padding: 0 10%;
     height: 100%;
 }
 
@@ -293,7 +293,7 @@ footer {
     border-bottom: solid #C4C4C4 0.4px;
 }
 
-.footerCeiling > p {
+.footerCeiling p {
     font-family: 'Mulish';
     font-size: 1.7vh;
     color: #848484;
@@ -307,12 +307,12 @@ footer {
     background-color: #F8F8F8;
 }
 
-.footerIcons > nav {
+.footerIcons nav {
     width: 20%;
     display: flex;
     justify-content: space-between;
 }
 
-.footerIcons > nav > img:hover {
+.footerIcons img {
     cursor: pointer;
 }
