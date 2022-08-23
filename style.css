@@ -22,26 +22,11 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 3% 10%;
-    margin-bottom: 2%;
+    padding: 4vh 10vw 6vh;
 }
 
 header img {
-    height: 4.3vh;
-    width: 4.3vh;
-}
-
-button {
-    border: solid #FB8F1D 1px;
-    background-color: #FB8F1D;
-    color: white;
-    border-radius: 8px;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: white;
-    color: #FB8F1D;
+    width: 3.5%;
 }
 
 .header__functional {
@@ -69,6 +54,19 @@ button:hover {
 .header__functional a:hover {
     color: #202336;
     cursor: pointer;
+}
+
+button {
+    border: solid #FB8F1D 1px;
+    background-color: #FB8F1D;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #FB8F1D;
 }
 
 .header__functional button {
@@ -138,9 +136,6 @@ h1, h2 {
     font-family: 'Inter';
     padding: 0 1.5vw;
     appearance: none;
-}
-
-.holidayFinder__selects select:hover {
     cursor: pointer;
 }
 
@@ -263,15 +258,15 @@ h1, h2 {
     background-image: url(assets/images/Raja\ Ampat.png);
 }
 
-.Fanjingshan {
+.fanjingshan {
     background-image: url(assets/images/Fanjingshan.png);
 }
 
-.Vevey {
+.vevey {
     background-image: url(assets/images/Vevey.png);
 }
 
-.Skadar {
+.skadar {
     background-image: url(assets/images/Skadar.png);
 }
 
