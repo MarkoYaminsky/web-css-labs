@@ -23,10 +23,11 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 4vh 10vw 6vh;
+    width: 80vw;
 }
 
 header img {
-    width: 3.5%;
+    height: 3.5%;
 }
 
 .header__functional {
@@ -34,6 +35,7 @@ header img {
     padding-right: 5%;
     display: flex; 
     justify-content: flex-end;
+    align-items: center;
 }
 
 .header__functional nav {
@@ -45,7 +47,7 @@ header img {
 }
 
 .header__functional a {
-    font-size: 1.9vh;
+    font-size: 1.02vw;
     font-family: 'Inter';
     color: #B8BECD;
     text-decoration: none;
@@ -70,6 +72,7 @@ button:hover {
 }
 
 .header__functional button {
+    font-size: 0.98vw;
     width: 8.25vw;
     height: 4.4vh;
 }
@@ -79,8 +82,8 @@ button:hover {
 }
 
 h1 {
-    font-size: 6.4vh;
-    line-height: 8vh;
+    font-size: 3.5vw;
+    line-height: 4.5vw;
 }
 
 h1, h2 {
@@ -96,15 +99,18 @@ h1, h2 {
 }
 
 .topPage img {
-    height: 60vh;
+    width: 40vw;
+    height: 38vw;
+    align-self: center;
 }
 
 .holidayFinder {
-    width: 30%;
+    width: 37%;
+    height: 55vh;
 }
 
 .holidayFinder p {
-    margin: 15% 0;
+    margin: 7vh 0;
     font-family: 'Inter';
     font-weight: 900;
 }
@@ -120,7 +126,7 @@ h1, h2 {
 }
 
 .holidayFinder__selects {
-    width: 29vw;
+    width: 100%;
     height: 17vh;
     display: flex;
     flex-wrap: wrap;
@@ -128,8 +134,8 @@ h1, h2 {
 }
 
 .holidayFinder__selects select { 
-    width: 13.75vw;
-    height: 5.2vh;
+    width: 47%;
+    height: 30%;
     border: solid #AFB0B9 0.8px;
     border-radius: 6px;
     color: #4A4C53;
@@ -151,20 +157,23 @@ h1, h2 {
 
 .infoPage {
     background-color: #F8F8F8;
-    padding: 5% 0 5% 0;
+    padding: 5% 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .infoPage img {
-    height: 53.4vh;
+    height: 30vw;
+    width: 37vw;
 }
 
 .infoPage__main {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 5%;
+    margin-left: 5vw;
+    width: 35vw;
 }
 
 .infoPage__main h2 {
@@ -173,7 +182,7 @@ h1, h2 {
 }
 
 .infoPage__main p {
-    width: 28vw;
+    width: 70%;
     margin: 3vh 0 4vh;
     font-family: 'Mulish';
     font-size: 1.7vh;
@@ -239,18 +248,17 @@ h1, h2 {
     justify-content: flex-end;
     background-color: white;
     border-radius: 0 6px 0 0;
-    height: 17%;
     width: 50%;
     font-family: 'Inter';
 }
 
 .featuredDestinations__images h3 {
-    font-size: 1.8vh;
+    font-size: 1vw;
     line-height: 200%;
 }
 
 .featuredDestinations__images p {
-    font-size: 1.5vh;
+    font-size: 0.82vw;
     color: #80918E;
 }
 
