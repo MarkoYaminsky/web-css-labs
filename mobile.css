@@ -1,0 +1,176 @@
+@media screen and (max-width: 1000px){
+    .desktop *, .header__functional button {
+        display: none;
+    }
+
+    .header__functional {
+        justify-content: flex-end;
+    }
+
+    .mobile * {
+        display: block;
+    }
+
+    .mobile nav {
+        position: absolute;
+        right: 15vw;
+        top: 3.5vh;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sticks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 4vw;
+        transition-duration: 1s;
+    }
+
+    .mobile .stick {
+        display: block;
+        width: 5vw;
+        height: 0.5vw;
+        border-radius: 6px;
+        background-color: black;
+    }
+
+    .hamburgerContent {
+        background-color: white;
+        border: solid rgb(15, 138, 15);
+        position: absolute;
+        height: 25vh;
+        width: 25vw;
+        top: 2.5vh;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    .mobile a {
+        font-size: 3vw;
+        color: black;
+    }
+
+    .topPage {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .topPage img {
+        order: 1;
+        width: 80vw;
+        height: 76vw;
+        margin-bottom: 4vh;
+    }
+
+    .holidayFinder {
+        display: flex;
+        order: 2;
+        width: 100%;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    .holidayFinder p {
+        margin: 5vh;
+        font-size: 4.5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .holidayFinder p::after {
+        width: 40%;
+        align-self: center;
+    }
+
+    .holidayFinder__selects {
+        height: 17vh;
+    }
+
+    .holidayFinder select {
+        width: 100%;
+        height: 20%;
+        font-size: 3vw;
+    }
+
+    .holidayFinder button, .infoPage__main button {
+        width: 25vw;
+    }
+
+    .infoPage {
+        flex-direction: column;
+    }
+
+    .infoPage img {
+        width: 80vw;
+        height: 64.8vw;
+        margin-bottom: 4vh;
+    }
+
+    .infoPage__main {
+        width: 80vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infoPage__main p {
+        font-size: 3.5vw;
+    }
+
+    .infoPage__main h2 {
+        font-size: 5.5vw;
+    }
+
+    .lowerPage {
+        padding: 5vh 14vw;
+    }
+
+    .featuredDestinations__text {
+        flex-direction: column;
+        align-items: center;
+        height: 5vh;
+    }
+
+    .featuredDestinations__text h2 {
+        font-size: 5.5vw;
+    }
+    
+    .featuredDestinations__text a {
+        font-size: 2.5vw;
+    }
+
+    .featuredDestinations__images {
+        margin-top: 2vh;
+        flex-direction: column;
+        align-items: center;
+        height: 350vw;
+    }
+
+    .featuredDestinations__images div {
+        width: 65.2vw;
+        height: 84vw;
+        background-size: 65.2vw 84vw;
+    }
+
+    .featuredDestinations__images h3 {
+        font-size: 2.5vw;
+    }
+
+    .featuredDestinations__images p {
+        font-size: 2vw;
+    }
+
+    .footerIcons nav {
+        width: 60%;
+    }
+}
