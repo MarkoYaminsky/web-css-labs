@@ -9,14 +9,6 @@ button:hover {
     animation: wiggle 2s linear;
 }
 
-.featuredDestinations__text span:hover {
-    text-decoration: underline;
-}
-
-.holidayFinder__selects select:focus {
-    border-color: blue;
-}
-
   @keyframes wiggle {
     0%, 7% {
       transform: rotateZ(0);
@@ -40,6 +32,14 @@ button:hover {
       transform: rotateZ(0);
     }
   }
+
+.featuredDestinations__text span:hover {
+    text-decoration: underline;
+}
+
+.holidayFinder__selects select:focus {
+    border-color: blue;
+}
 
 .featuredDestinations__images span:hover h3, .featuredDestinations__images span:hover p {
     animation: raiseText .7s linear;
